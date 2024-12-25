@@ -15,7 +15,14 @@ Prepare for your next embedded software interview with a comprehensive list of q
 #### 1.3 [Interview Questions for Embedded Systems](InterviewQuestions/InterviewQuestions_Embedded.md)
 
 ### 2. **Books for Self-Improvement**
+
 A collection of must-read books to deepen your knowledge in embedded software, programming, system design, and software development practices.
+
+#### 2.1 [C Books to Read](BooksToRead/BooksToRead_C.md)
+
+#### 2.2 [C++ Books to Read](BooksToRead/BooksToRead_CPP.md)
+
+#### 2.3 [RTOS Books to Read](BooksToRead/BooksToRead_RTOS.md)
 
 ### 3. **Useful Libraries & Tools**
 Explore a curated list of third-party libraries, frameworks, and development tools specifically for embedded systems development. From communication protocols to low-level hardware interfacing, these resources will help you build efficient and robust systems.
