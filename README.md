@@ -5,7 +5,14 @@ Welcome to **EmbedLab** — a curated collection of resources to help embedded s
 ## What's Inside?
 
 ### 1. **Interview Questions**
+
 Prepare for your next embedded software interview with a comprehensive list of questions and answers covering core concepts, algorithms, and practical embedded system challenges.
+
+#### 1.1 [Interview Questions for C](InterviewQuestions/InterviewQuestions_C.md)
+
+#### 1.2 [Interview Questions for C++](InterviewQuestions/InterviewQuestions_C++.md)
+
+#### 1.3 [Interview Questions for Embedded Systems](InterviewQuestions/InterviewQuestions_Embedded.md)
 
 ### 2. **Books for Self-Improvement**
 A collection of must-read books to deepen your knowledge in embedded software, programming, system design, and software development practices.

@@ -1,0 +1,137 @@
+# C Interview Questions
+
+### • What is the output of the following program?
+
+```c
+#include <stdio.h>
+#include <stdint.h>
+
+int main()
+{
+    int arr[5] = {0};
+
+    memset(arr, 1, sizeof(arr));
+
+    for (int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+<details> <summary><b>Answer</b></summary>
+
+The output of the program is `16843009 16843009 16843009 16843009 16843009`.
+
+**Explanation:** The `memset` function sets each byte of the array `arr` to the value `1`. Since `int32_t` is a 4-byte type, each element of the array will have all its bytes set to `1`:
+
+```c
+0x01010101 in hexadecimal (4 bytes)
+```
+
+When this value is interpreted as an integer, it is equal to `16843009` in decimal.
+
+</details>
+
+---
+
+### • Can you define a function inside another function in C?
+
+```c
+#include <stdio.h>
+
+void outer_function()
+{
+    void inner_function()
+    {
+        printf("Inner function called\n");
+    }
+
+    inner_function(); /* Function call */
+}
+```
+
+<details> <summary><b>Answer</b></summary>
+
+- **Standard C** does not allow nested function definitions.
+
+- However, you can declare a function inside a function, but this is not the same as defining it. A declaration simply tells the compiler about the function's existence and signature, while the actual definition must occur at file scope.
+
+```c
+#include <stdio.h>
+
+void outer_function()
+{
+    void inner_function(); /* Function declaration */
+
+    inner_function(); /* Function call */
+}
+
+void inner_function()
+{
+    printf("Inner function called\n");
+}
+
+int main()
+{
+    outer_function();
+    return 0;
+}
+```
+
+**- GCC Language Extension:** GCC provides a language extension that supports nested functions. These functions are nonstandard, meaning they are not portable and are entirely compiler-dependent.
+
+```c
+#include <stdio.h>
+
+void outer_function()
+{
+    void inner_function()
+    {
+        printf("Inner function called\n");
+    }
+
+    inner_function(); /* Function call */
+}
+
+int main()
+{
+    outer_function();
+    return 0;
+}
+```
+
+</details>
+
+---
+
+### • What is the output of the follow program?
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int i = 0;
+    int j = i++ + ++i;
+    printf("%d\n", j);
+    return 0;
+}
+```
+
+<details> <summary><b>Answer</b></summary>
+
+The output of the program is undefined behavior.
+
+1. **Order of evaluation:**
+    - In the statement `int j = i++ + ++i;`, there is no sequence point between `i++` and `++i`.
+    - The order in which `i++` (post-increment) and `++i` (pre-increment) are evaluated is unspecified.
+    - This leads to a conflict because `i` is being modified more than once without an intervening sequence point.
+    - See: [C Operator Precedence](https://en.cppreference.com/w/c/language/operator_precedence)
+    - See: [Order of evaluation](https://en.cppreference.com/w/c/language/eval_order)
+2. **Undefined behavior:**
+    - Modifying the same variable (`i`) multiple times without a sequence point (or a clear order of evaluation) causes undefined behavior in C.
+    - The compiler may generate different results depending on how it evaluates the expression.
+    - See: [Undefined Behavior in C](https://en.cppreference.com/w/c/language/behavior)
