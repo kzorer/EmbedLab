@@ -135,3 +135,38 @@ The output of the program is undefined behavior.
     - Modifying the same variable (`i`) multiple times without a sequence point (or a clear order of evaluation) causes undefined behavior in C.
     - The compiler may generate different results depending on how it evaluates the expression.
     - See: [Undefined Behavior in C](https://en.cppreference.com/w/c/language/behavior)
+
+</details>
+
+### • What is the output of the follow program?
+
+```c
+
+#include <stdio.h>
+
+int main()
+{
+    int x = 5;
+    size_t sz = sizeof(x++);
+    int y = ++x;
+
+    printf("x = %d\n", x);
+    printf("y = %d\n", y);
+}
+
+```
+
+<details> <summary><b>Answer</b></summary>
+
+The program behaves as follows:
+
+1. `int x = 5;` initializes `x` to 5.
+2. `size_t sz = sizeof(x++);` evaluates the size of `x` without incrementing it because `sizeof` does not evaluate its operand. `x` remains 5, and `sz` holds the size of `x` (typically 4 bytes).
+3. `int y = ++x;` increments `x` to 6 before assigning it to `y`. So, both `x` and `y` become 6.
+4. The program prints: x = 6 y = 6
+
+### Key Points:
+- `sizeof(x++)` does not increment `x`.
+- `++x` increments `x` before assigning it to `y`.
+
+</details>
