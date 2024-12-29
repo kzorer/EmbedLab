@@ -166,7 +166,6 @@ The program behaves as follows:
 4. The program prints: x = 6 y = 6
 
 ### Key Points:
-- `sizeof(x++)` does not increment `x`.
-- `++x` increments `x` before assigning it to `y`.
+- The sizeof operator yields the size (in bytes) of its operand, which may be an expression or the parenthesized name of a type. The size is determined from the type of the operand. The result is an integer. If the type of the operand is a variable length array type, the operand is evaluated; otherwise, the operand is not evaluated and the result is an integer constant, so  `sizeof(x++)` does not increment `x`.
 
 </details>
