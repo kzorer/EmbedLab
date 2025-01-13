@@ -21,7 +21,7 @@ int main()
 }
 
 ```
-#### • What does the call to foo(std::move(s1)) do in terms of ownership of the string data?
+#### • What does the call to `foo(std::move(s1))` do in terms of ownership of the string data?
 #### • Does s1's resource get "moved" or "stolen" in this case?
 
 <details> <summary><b>Answer</b></summary>
