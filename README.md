@@ -22,9 +22,11 @@ A collection of must-read books to deepen your knowledge in embedded software, p
 
 #### 2.2 [C++ Books to Read](BooksToRead/BooksToRead_CPP.md)
 
-#### 2.3 [Programming Books to Read](BooksToRead/BooksToRead_Programming.md)
+#### 2.3 [Embedded Books to Read](BooksToRead/BooksToRead_Embedded.md)
 
-#### 2.4 [RTOS Books to Read](BooksToRead/BooksToRead_RTOS.md)
+#### 2.4 [Programming Books to Read](BooksToRead/BooksToRead_Programming.md)
+
+#### 2.5 [RTOS Books to Read](BooksToRead/BooksToRead_RTOS.md)
 
 ### 3. **Useful Libraries & Tools**
 Explore a curated list of third-party libraries, frameworks, and development tools specifically for embedded systems development. From communication protocols to low-level hardware interfacing, these resources will help you build efficient and robust systems.
