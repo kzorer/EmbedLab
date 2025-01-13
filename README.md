@@ -10,7 +10,7 @@ Prepare for your next embedded software interview with a comprehensive list of q
 
 #### 1.1 [Interview Questions for C](InterviewQuestions/InterviewQuestions_C.md)
 
-#### 1.2 [Interview Questions for C++](InterviewQuestions/InterviewQuestions_C++.md)
+#### 1.2 [Interview Questions for C++](InterviewQuestions/InterviewQuestions_CPP.md)
 
 #### 1.3 [Interview Questions for Embedded Systems](InterviewQuestions/InterviewQuestions_Embedded.md)
 
