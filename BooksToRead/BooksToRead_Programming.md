@@ -14,7 +14,7 @@
          <strong>Author:</strong> David Thomas, ‎Andrew Hunt<br/>
          <strong>Edition:</strong> 20th Anniversary Edition<br/>
          <strong>Year:</strong> 2019<br/>
-         <a href="https://en.wikipedia.org/wiki/The_Pragmatic_Programmer" target="_blank">Wiki Link</a>
+         <a href="https://www.google.com/books/edition/The_Pragmatic_Programmer/5wBQEp6ruIAC" target="_blank">Link</a>
       </td>
    </tr>
 </table>
@@ -34,7 +34,7 @@
          <strong>Author:</strong> Robert C. Martin<br/>
          <strong>Edition:</strong> 1st Edition<br/>
          <strong>Year:</strong> 2008<br/>
-         <a href="https://www.google.com.tr/books/edition/Clean_Code/_i6bDeoCQzsC?hl=tr&gbpv=0" target="_blank">Link</a>
+         <a href="https://www.google.com/books/edition/Clean_Code/_i6bDeoCQzsC" target="_blank">Link</a>
       </td>
    </tr>
 </table>
