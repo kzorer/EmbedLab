@@ -183,7 +183,9 @@ int main() {
 }
 ```
 <details> <summary><b>Answer</b></summary>
+    
 The program behaves as follows:
+
 1. `int x = 10;` initializes `x` to10.
 2. `int y = sizeof(int [x++]);` The memory occupied by an int[10] array is the product of the number of elements and the value of sizeof(int). (Note: The value of sizeof(int) may vary depending on the platform. However, in common systems, it is considered to be 4 bytes.)
 3.  `int y = sizeof(int [x++]);` Normally, the operand of the sizeof operator is not evaluated (it does not have any side effects), but note that when dealing with VLA types, the expression determining the array's size (in this case, `x++`) is evaluated to compute the array's size.
