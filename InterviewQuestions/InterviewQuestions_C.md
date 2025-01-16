@@ -169,3 +169,25 @@ The program behaves as follows:
 - The sizeof operator yields the size (in bytes) of its operand, which may be an expression or the parenthesized name of a type. The size is determined from the type of the operand. The result is an integer. If the type of the operand is a variable length array type, the operand is evaluated; otherwise, the operand is not evaluated and the result is an integer constant, so  `sizeof(x++)` does not increment `x`.
 
 </details>
+
+### • What is the output of the follow program?
+
+```c
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int y = sizeof(int [x++]);
+    printf("%d %d ", x, y);
+    return 0;
+}
+```
+<details> <summary><b>Answer</b></summary>
+The program behaves as follows:
+1. `int x = 10;` initializes `x` to10.
+2. `int y = sizeof(int [x++]);` The memory occupied by an int[10] array is the product of the number of elements and the value of sizeof(int). (Note: The value of sizeof(int) may vary depending on the platform. However, in common systems, it is considered to be 4 bytes.)
+3.  `int y = sizeof(int [x++]);` Normally, the operand of the sizeof operator is not evaluated (it does not have any side effects), but note that when dealing with VLA types, the expression determining the array's size (in this case, `x++`) is evaluated to compute the array's size.
+4. The program prints: x = 11 y = 40
+
+
+</details>
