@@ -12,7 +12,7 @@ Below books are ordered by entry level to advanced level. If you are new to C pr
          <strong>Author:</strong> Brian W. Kernighan, Dennis M. Ritchie<br/>
          <strong>Edition:</strong> 2nd<br/>
          <strong>Year:</strong> 1988<br/>
-         <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language" target="_blank">Wiki Link</a>
+         <a href="https://www.google.com.tr/books/edition/C_Programming_Language/Yi5FI5QcdmYC" target="_blank">Link</a>
       </td>
    </tr>
 </table>
